@@ -1,0 +1,61 @@
+﻿@model IEnumerable<LanchesDemo.Models.Menu>
+
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.MenuItem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreparationTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MenuItem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PreparationTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    <a href="#" onclick="AddOrder(@item.Id);" class="btn btn-sm btn-success">+</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<h2>Pedido </h2>
+
+<div id="orderlist"></div>
+
+
+
+
+<script src="~/js/menu.js"></script>

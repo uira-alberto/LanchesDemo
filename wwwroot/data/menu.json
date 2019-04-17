@@ -1,0 +1,7 @@
+[
+ {"Id":"1","MenuItem":"Hamburguer",   "Price":"9.90", "PreparationTime":"240", "Description": "2 hamburgues alface e mollho." }
+,{"Id":"2","MenuItem":"Batata Frita", "Price":"5.90", "PreparationTime":"120", "Description": "Batata frita especial." }
+,{"Id":"3","MenuItem":"Refrigerante", "Price":"3.90", "PreparationTime":"0",   "Description": "Coca/Guarana" }
+,{"Id":"4","MenuItem":"Suco",         "Price":"6.90", "PreparationTime":"160", "Description": "Laranja/Manga" }
+,{"Id":"5","MenuItem":"Salada",       "Price":"8.90", "PreparationTime":"200", "Description": "Salada Caesar" }
+]
